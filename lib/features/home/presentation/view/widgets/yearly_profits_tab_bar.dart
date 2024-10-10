@@ -79,9 +79,18 @@ class _YearlyProfitsTabBarState extends State<YearlyProfitsTabBar> {
                     return Column(
                       children: [
                         const SizedBox(height: 20),
-                        Text('إجمالي الإيرادات: $totalRevenue جنيه'),
-                        Text('إجمالي المصروفات: $totalExpenses جنيه'),
-                        Text('الربح السنوي: $totalProfit جنيه'),
+                        Text(
+                          'إجمالي الإيرادات: $totalRevenue جنيه',
+                          style: const TextStyle(fontSize: 18),
+                        ),
+                        Text(
+                          'إجمالي المصروفات: $totalExpenses جنيه',
+                          style: const TextStyle(fontSize: 18),
+                        ),
+                        Text(
+                          'الربح السنوي: $totalProfit جنيه',
+                          style: const TextStyle(fontSize: 18),
+                        ),
                         const Divider(),
                         displayPartnerProfits(),
                       ],
@@ -119,9 +128,18 @@ class _YearlyProfitsTabBarState extends State<YearlyProfitsTabBar> {
               return Card(
                 color: kCardColor,
                 child: ListTile(
-                  title: Text('شريك: ${partner.partnerName}'),
-                  subtitle: Text('نسبة الشريك: ${partner.sharePercentage}%'),
-                  trailing: Text('نصيب الشريك من الأرباح: $partnerProfit جنيه'),
+                  title: Text(
+                    'شريك: ${partner.partnerName}',
+                    style: const TextStyle(fontSize: 18),
+                  ),
+                  subtitle: Text(
+                    'نسبة الشريك: ${partner.sharePercentage}%',
+                    style: const TextStyle(fontSize: 18),
+                  ),
+                  trailing: Text(
+                    'نصيب الشريك من الأرباح: $partnerProfit جنيه',
+                    style: const TextStyle(fontSize: 18),
+                  ),
                 ),
               );
             }).toList(),

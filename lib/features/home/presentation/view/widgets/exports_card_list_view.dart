@@ -169,9 +169,14 @@ class _ExportsCardListViewState extends State<ExportsCardListView> {
                       return Card(
                         color: kCardColor,
                         child: ListTile(
-                          title: Text('المبلغ: ${export.amount} جنيه'),
+                          title: Text(
+                            'المبلغ: ${export.amount} جنيه',
+                            style: const TextStyle(fontSize: 18),
+                          ),
                           subtitle: Text(
-                              'ملاحظة: ${export.note}\nالتاريخ: $formattedDate'),
+                            'ملاحظة: ${export.note}\nالتاريخ: $formattedDate',
+                            style: const TextStyle(fontSize: 18),
+                          ),
                           trailing: canEditOrDelete(export.createdAt)
                               ? Row(
                                   mainAxisSize: MainAxisSize.min,
@@ -220,7 +225,7 @@ class _ExportsCardListViewState extends State<ExportsCardListView> {
                 Row(
                   children: [
                     const Text(
-                      'المبلغ الإجمالي: ',
+                      'المبلغ الإجمالي:   ',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,

@@ -56,9 +56,7 @@ class _RevenueCardListViewState extends State<RevenueCardListView> {
                     labelText: 'المبلغ',
                   ),
                   keyboardType: TextInputType.number,
-                  inputFormatters: [
-                    FilteringTextInputFormatter.digitsOnly
-                  ],
+                  inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                 ),
                 TextFormField(
                   controller: noteController,
@@ -96,7 +94,6 @@ class _RevenueCardListViewState extends State<RevenueCardListView> {
                 }
 
                 double? amount = double.tryParse(amountController.text);
-                
 
                 final note = noteController.text;
 
@@ -154,7 +151,6 @@ class _RevenueCardListViewState extends State<RevenueCardListView> {
                   itemBuilder: (context, index) {
                     final revenue = revenues[index];
 
-                    // Check if the revenue is from today
                     bool canEditOrDelete = false;
                     if (revenue.createdAt != null) {
                       DateTime now = DateTime.now();
@@ -162,8 +158,7 @@ class _RevenueCardListViewState extends State<RevenueCardListView> {
                       if (now.year == createdAt.year &&
                           now.month == createdAt.month &&
                           now.day == createdAt.day) {
-                        canEditOrDelete =
-                            true; // Allow edit/delete only if it's the same day
+                        canEditOrDelete = true;
                       }
                     }
 
@@ -179,9 +174,12 @@ class _RevenueCardListViewState extends State<RevenueCardListView> {
                       child: ListTile(
                         title: Text(
                           'المبلغ: ${revenue.amount} جنيه',
+                          style: const TextStyle(fontSize: 18),
                         ),
                         subtitle: Text(
-                            'ملاحظة: ${revenue.note}\nالتاريخ: $formattedDate'),
+                          'ملاحظة: ${revenue.note}\nالتاريخ: $formattedDate',
+                          style: const TextStyle(fontSize: 18),
+                        ),
                         trailing: canEditOrDelete
                             ? Row(
                                 mainAxisSize: MainAxisSize.min,
@@ -230,7 +228,7 @@ class _RevenueCardListViewState extends State<RevenueCardListView> {
                 child: Row(
                   children: [
                     const Text(
-                      'المبلغ الإجمالي: ',
+                      'المبلغ الإجمالي:   ',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,

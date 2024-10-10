@@ -18,7 +18,7 @@ class ExportsModel {
     return ExportsModel(
       id: id,
       amount: (jsonData['amount'] as num).toDouble(),
-      note: jsonData['note'] ?? '',
+      note: jsonData['notes'] ?? '',
       createdAt: (jsonData['createdAt'] != null)
           ? (jsonData['createdAt'] as Timestamp).toDate()
           : null,

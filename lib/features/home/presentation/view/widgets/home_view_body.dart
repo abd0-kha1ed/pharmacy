@@ -103,7 +103,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
         backgroundColor: kPrimaryColor,
       ),
       body: const Padding(
-        padding: EdgeInsets.symmetric(vertical: 16),
+        padding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
         child: PharmacyCardListView(),
       ),
       floatingActionButton: FloatingActionButton(

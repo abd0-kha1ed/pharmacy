@@ -161,7 +161,7 @@ class _PartnerTabBarState extends State<PartnerTabBar> {
             Row(
               children: [
                 const Text(
-                  'صافي الربح: ',
+                  'صافي الربح:   ',
                   style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -169,7 +169,7 @@ class _PartnerTabBarState extends State<PartnerTabBar> {
                   textAlign: TextAlign.center,
                 ),
                 Text(
-                  '$netProfit جنيه',
+                  '$netProfit  جنيه',
                   style: const TextStyle(fontSize: 18, color: Colors.black),
                   textAlign: TextAlign.center,
                 ),
