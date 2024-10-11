@@ -147,6 +147,7 @@ class _RevenueCardListViewState extends State<RevenueCardListView> {
               Flexible(
                 fit: FlexFit.loose,
                 child: ListView.builder(
+                  physics: const BouncingScrollPhysics(),
                   itemCount: revenues.length,
                   itemBuilder: (context, index) {
                     final revenue = revenues[index];

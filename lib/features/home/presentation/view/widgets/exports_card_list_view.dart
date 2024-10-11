@@ -147,6 +147,7 @@ class _ExportsCardListViewState extends State<ExportsCardListView> {
                 Flexible(
                   fit: FlexFit.loose,
                   child: ListView.builder(
+                    physics: const BouncingScrollPhysics(),
                     itemCount: exports.length,
                     itemBuilder: (context, index) {
                       final export = exports[index];

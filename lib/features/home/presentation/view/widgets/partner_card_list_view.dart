@@ -34,6 +34,7 @@ class PartnerCardListView extends StatelessWidget {
 
           return Expanded(
             child: ListView.builder(
+              physics: const BouncingScrollPhysics(),
               itemCount: partners.length,
               itemBuilder: (context, index) {
                 final partner = partners[index];
