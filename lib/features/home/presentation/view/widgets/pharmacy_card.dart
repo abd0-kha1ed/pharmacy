@@ -24,7 +24,10 @@ class PharmacyCard extends StatelessWidget {
       child: Card(
         color: kCardColor,
         child: ListTile(
-          title: Text(pharmacy.pharmacyName),
+          title: Text(
+            pharmacy.pharmacyName,
+            style: const TextStyle(fontSize: 18),
+          ),
           leading: const Icon(
             Icons.local_pharmacy,
             color: kTextColor2,

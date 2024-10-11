@@ -44,9 +44,14 @@ class PartnerCardListView extends StatelessWidget {
                 return Card(
                   color: kCardColor,
                   child: ListTile(
-                    title: Text('الاسم: ${partner.partnerName}'),
+                    title: Text(
+                      'الاسم: ${partner.partnerName}',
+                      style: const TextStyle(fontSize: 18),
+                    ),
                     subtitle: Text(
-                        'نسبة الملكية: ${partner.sharePercentage}%\nحصة الربح: ${partnerShare.toStringAsFixed(2)} جنيه'),
+                      'نسبة الملكية: ${partner.sharePercentage}%\nحصة الربح: ${partnerShare.toStringAsFixed(2)} جنيه',
+                      style: const TextStyle(fontSize: 18),
+                    ),
                   ),
                 );
               },

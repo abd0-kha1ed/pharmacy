@@ -31,7 +31,7 @@ class _PharmacyCardListViewState extends State<PharmacyCardListView> {
                 pharmacies.add(
                   PharmacyModel.fromJson({
                     'name': doc['name'],
-                    'id': doc.id, // استخدم معرف المستند كـ id
+                    'id': doc.id, 
                   }),
                 );
               }

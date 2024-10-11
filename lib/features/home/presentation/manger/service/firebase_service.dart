@@ -217,7 +217,7 @@ class FirebaseServices {
         .doc(revenueId)
         .update({
       'amount': amount,
-      'note': note,
+      'notes': note,
     });
   }
 
@@ -230,7 +230,7 @@ class FirebaseServices {
         .doc(exportId)
         .update({
       'amount': amount,
-      'note': note,
+      'notes': note,
     });
   }
 
