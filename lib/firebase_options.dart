@@ -41,48 +41,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAsEhOH-WBVaTV_wKXUfBMZGHUl7kJazMk',
-    appId: '1:956703448547:web:de40359f898a002e6194d6',
-    messagingSenderId: '956703448547',
-    projectId: 'pharmacy-system-5f559',
-    authDomain: 'pharmacy-system-5f559.firebaseapp.com',
-    storageBucket: 'pharmacy-system-5f559.appspot.com',
-    measurementId: 'G-7J2NQQF4DR',
+    apiKey: 'AIzaSyA9GSUB-CzsK2ls9zgi0jz7d39dZpb1Gck',
+    appId: '1:25474086383:web:0284716aa4a782c44e721a',
+    messagingSenderId: '25474086383',
+    projectId: 'pharmacy-388f0',
+    authDomain: 'pharmacy-388f0.firebaseapp.com',
+    storageBucket: 'pharmacy-388f0.appspot.com',
+    measurementId: 'G-039VRPF2GN',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCBF4wQqIc6QxWDLFsO8mntgsePAON59PM',
-    appId: '1:956703448547:android:2d52ecbe00968dc16194d6',
-    messagingSenderId: '956703448547',
-    projectId: 'pharmacy-system-5f559',
-    storageBucket: 'pharmacy-system-5f559.appspot.com',
+    apiKey: 'AIzaSyAnAwMEaxHnsglpLJhbRu2Se55U4m6UbZM',
+    appId: '1:25474086383:android:0421070974b9ca3c4e721a',
+    messagingSenderId: '25474086383',
+    projectId: 'pharmacy-388f0',
+    storageBucket: 'pharmacy-388f0.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBPbzi5Ugk5baurm-nW5re5fUCdpwMvPIY',
-    appId: '1:956703448547:ios:d7999240ea566d876194d6',
-    messagingSenderId: '956703448547',
-    projectId: 'pharmacy-system-5f559',
-    storageBucket: 'pharmacy-system-5f559.appspot.com',
+    apiKey: 'AIzaSyCAdzyEPwDoeJTSHwZjpG7nibzkY5BnZ7k',
+    appId: '1:25474086383:ios:3fb187309fe321934e721a',
+    messagingSenderId: '25474086383',
+    projectId: 'pharmacy-388f0',
+    storageBucket: 'pharmacy-388f0.appspot.com',
     iosBundleId: 'com.example.phrmacySystem',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBPbzi5Ugk5baurm-nW5re5fUCdpwMvPIY',
-    appId: '1:956703448547:ios:d7999240ea566d876194d6',
-    messagingSenderId: '956703448547',
-    projectId: 'pharmacy-system-5f559',
-    storageBucket: 'pharmacy-system-5f559.appspot.com',
+    apiKey: 'AIzaSyCAdzyEPwDoeJTSHwZjpG7nibzkY5BnZ7k',
+    appId: '1:25474086383:ios:3fb187309fe321934e721a',
+    messagingSenderId: '25474086383',
+    projectId: 'pharmacy-388f0',
+    storageBucket: 'pharmacy-388f0.appspot.com',
     iosBundleId: 'com.example.phrmacySystem',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyAsEhOH-WBVaTV_wKXUfBMZGHUl7kJazMk',
-    appId: '1:956703448547:web:a4ac0c601a95b0ab6194d6',
-    messagingSenderId: '956703448547',
-    projectId: 'pharmacy-system-5f559',
-    authDomain: 'pharmacy-system-5f559.firebaseapp.com',
-    storageBucket: 'pharmacy-system-5f559.appspot.com',
-    measurementId: 'G-0TGJE5MX89',
+    apiKey: 'AIzaSyA9GSUB-CzsK2ls9zgi0jz7d39dZpb1Gck',
+    appId: '1:25474086383:web:0284716aa4a782c44e721a',
+    messagingSenderId: '25474086383',
+    projectId: 'pharmacy-388f0',
+    authDomain: 'pharmacy-388f0.firebaseapp.com',
+    storageBucket: 'pharmacy-388f0.appspot.com',
+    measurementId: 'G-039VRPF2GN',
   );
 }

@@ -45,3 +45,8 @@ android {
 flutter {
     source = "../.."
 }
+dependencies{
+    implementation 'com.google.firebase:firebase-core:latest_version'
+    implementation 'com.google.firebase:firebase-firestore:latest_version'
+implementation 'com.google.android.gms:play-services-base:17.6.0'
+}

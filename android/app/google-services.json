@@ -1,13 +1,70 @@
 {
   "project_info": {
-    "project_number": "956703448547",
-    "project_id": "pharmacy-system-5f559",
-    "storage_bucket": "pharmacy-system-5f559.appspot.com"
+    "project_number": "25474086383",
+    "project_id": "pharmacy-388f0",
+    "storage_bucket": "pharmacy-388f0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:956703448547:android:2d52ecbe00968dc16194d6",
+        "mobilesdk_app_id": "1:25474086383:android:65a928ed18a4dbcf4e721a",
+        "android_client_info": {
+          "package_name": "com.e"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnAwMEaxHnsglpLJhbRu2Se55U4m6UbZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25474086383:android:1ef24e0b4ef8b68d4e721a",
+        "android_client_info": {
+          "package_name": "com.example.pharmacy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnAwMEaxHnsglpLJhbRu2Se55U4m6UbZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25474086383:android:86f7eebaa3be873e4e721a",
+        "android_client_info": {
+          "package_name": "com.example.pharmacy_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnAwMEaxHnsglpLJhbRu2Se55U4m6UbZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25474086383:android:ff95dc6e0109c17c4e721a",
         "android_client_info": {
           "package_name": "com.example.pharmacy_system"
         }
@@ -15,7 +72,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCBF4wQqIc6QxWDLFsO8mntgsePAON59PM"
+          "current_key": "AIzaSyAnAwMEaxHnsglpLJhbRu2Se55U4m6UbZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25474086383:android:0421070974b9ca3c4e721a",
+        "android_client_info": {
+          "package_name": "com.example.phrmacy_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnAwMEaxHnsglpLJhbRu2Se55U4m6UbZM"
         }
       ],
       "services": {

@@ -19,7 +19,6 @@ class CustomDropdownButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         DropdownButton<int>(
           value: selectedMonth,
@@ -33,7 +32,7 @@ class CustomDropdownButton extends StatelessWidget {
           }),
           onChanged: (value) {
             if (value != null) {
-              onMonthChanged(value);  
+              onMonthChanged(value);
             }
           },
         ),
@@ -50,7 +49,7 @@ class CustomDropdownButton extends StatelessWidget {
           }),
           onChanged: (value) {
             if (value != null) {
-              onYearChanged(value);  // تحديث السنة
+              onYearChanged(value); // تحديث السنة
             }
           },
         ),

@@ -188,10 +188,10 @@ class _RevenueCardListViewState extends State<RevenueCardListView> {
                                   IconButton(
                                     style: const ButtonStyle(
                                         backgroundColor: WidgetStatePropertyAll(
-                                            kAccentColor)),
+                                            kPrimaryColor)),
                                     icon: const Icon(
                                       Icons.edit,
-                                      color: kTextColor2,
+                                      color: Colors.white,
                                     ),
                                     onPressed: () {
                                       showRevenueDialog(revenue: revenue);
@@ -206,7 +206,7 @@ class _RevenueCardListViewState extends State<RevenueCardListView> {
                                             kAccentColor)),
                                     icon: const Icon(
                                       Icons.delete,
-                                      color: kTextColor2,
+                                      color: Colors.white,
                                     ),
                                     onPressed: () {
                                       db.deleteRevenue(

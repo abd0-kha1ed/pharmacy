@@ -23,10 +23,13 @@ class _SplashViewBodyState extends State<SplashViewBody>
   }
 
   @override
-  void dispose() {
+  void setState(VoidCallback fn) {
+void dispose() {
     super.dispose();
     animationController.dispose();
+  }    super.setState(fn);
   }
+  
 
   @override
   Widget build(BuildContext context) {

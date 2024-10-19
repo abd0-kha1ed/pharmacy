@@ -185,11 +185,11 @@ class _ExportsCardListViewState extends State<ExportsCardListView> {
                                     IconButton(
                                       style: const ButtonStyle(
                                         backgroundColor: WidgetStatePropertyAll(
-                                            kAccentColor),
+                                            kPrimaryColor),
                                       ),
                                       icon: const Icon(
                                         Icons.edit,
-                                        color: kTextColor2,
+                                        color: Colors.white,
                                       ),
                                       onPressed: () {
                                         showExportDialog(export: export);
@@ -205,7 +205,7 @@ class _ExportsCardListViewState extends State<ExportsCardListView> {
                                       ),
                                       icon: const Icon(
                                         Icons.delete,
-                                        color: kTextColor2,
+                                        color: Colors.white,
                                       ),
                                       onPressed: () async {
                                         await db.deleteExport(
