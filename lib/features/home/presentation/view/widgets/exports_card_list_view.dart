@@ -49,6 +49,7 @@ class _ExportsCardListViewState extends State<ExportsCardListView> {
                     if (value?.isEmpty ?? true) {
                       return 'برجاء إدخال المبلغ';
                     }
+                    return null;
                   },
                   controller: amountController,
                   decoration: const InputDecoration(

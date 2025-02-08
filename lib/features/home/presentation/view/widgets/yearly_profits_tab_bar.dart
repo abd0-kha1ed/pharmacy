@@ -126,22 +126,38 @@ class _YearlyProfitsTabBarState extends State<YearlyProfitsTabBar> {
               double partnerProfit =
                   totalProfit * (partner.sharePercentage / 100);
               return Card(
-                color: kCardColor,
-                child: ListTile(
-                  title: Text(
-                    'شريك: ${partner.partnerName}',
-                    style: const TextStyle(fontSize: 18),
-                  ),
-                  subtitle: Text(
-                    'نسبة الشريك: ${partner.sharePercentage}%',
-                    style: const TextStyle(fontSize: 18),
-                  ),
-                  trailing: Text(
-                    'نصيب الشريك من الأرباح: $partnerProfit جنيه',
-                    style: const TextStyle(fontSize: 18),
-                  ),
-                ),
-              );
+                  color: kCardColor,
+                  child: Column(
+                    children: [
+                      Text(
+                        'شريك: ${partner.partnerName}',
+                        style: const TextStyle(fontSize: 18),
+                      ),
+                      Text(
+                        'نسبة الشريك: ${partner.sharePercentage}%',
+                        style: const TextStyle(fontSize: 18),
+                      ),
+                      Text(
+                        'نصيب الشريك من الأرباح: $partnerProfit جنيه',
+                        style: const TextStyle(fontSize: 18),
+                      ),
+                    ],
+                  )
+                  // ListTile(
+                  //   title: Text(
+                  //     'شريك: ${partner.partnerName}',
+                  //     style: const TextStyle(fontSize: 18),
+                  //   ),
+                  //   subtitle: Text(
+                  //     'نسبة الشريك: ${partner.sharePercentage}%',
+                  //     style: const TextStyle(fontSize: 18),
+                  //   ),
+                  //   trailing: Text(
+                  //     'نصيب الشريك من الأرباح: $partnerProfit جنيه',
+                  //     style: const TextStyle(fontSize: 18),
+                  //   ),
+                  // ),
+                  );
             }).toList(),
           );
         } else {

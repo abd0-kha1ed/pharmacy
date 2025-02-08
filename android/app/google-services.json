@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "25474086383",
     "project_id": "pharmacy-388f0",
-    "storage_bucket": "pharmacy-388f0.appspot.com"
+    "storage_bucket": "pharmacy-388f0.firebasestorage.app"
   },
   "client": [
     {

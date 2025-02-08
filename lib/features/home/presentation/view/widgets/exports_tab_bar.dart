@@ -51,6 +51,7 @@ class _ExportsTabBarState extends State<ExportsTabBar> {
                       if (value?.isEmpty ?? true) {
                         return 'برجاء إدخال المبلغ';
                       }
+                      return null;
                     },
                     controller: amountController,
                     decoration: const InputDecoration(

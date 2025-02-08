@@ -1,16 +1,13 @@
 plugins {
     id "com.android.application"
-    // START: FlutterFire Configuration
-    id 'com.google.gms.google-services'
-    // END: FlutterFire Configuration
+    id 'com.google.gms.google-services' // Firebase Plugin
     id "kotlin-android"
-    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
 }
 
 android {
     namespace = "com.example.phrmacy_system"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 34 // استخدم الإصدار 34 المدعوم من Firebase
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -23,20 +20,15 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.example.phrmacy_system"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+        minSdk = 21 // الحد الأدنى المدعوم من Firebase
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
     }
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.debug
         }
     }
@@ -45,8 +37,15 @@ android {
 flutter {
     source = "../.."
 }
-dependencies{
-    implementation 'com.google.firebase:firebase-core:latest_version'
-    implementation 'com.google.firebase:firebase-firestore:latest_version'
-implementation 'com.google.android.gms:play-services-base:17.6.0'
+
+dependencies {
+    // استخدم Firebase BoM لإدارة إصدارات Firebase تلقائيًا
+    implementation platform('com.google.firebase:firebase-bom:32.7.0') // أحدث إصدار متاح
+
+    // Firebase Libraries
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-firestore'
+
+    // Google Play Services
+    implementation 'com.google.android.gms:play-services-base:18.2.0'
 }

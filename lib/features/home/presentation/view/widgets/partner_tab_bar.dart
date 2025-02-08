@@ -56,6 +56,7 @@ class _PartnerTabBarState extends State<PartnerTabBar> {
                     if (value?.isEmpty ?? true) {
                       return 'برجاء إدخال اسم الشريك';
                     }
+                    return null;
                   },
                   controller: partnerNameController,
                   decoration: const InputDecoration(
@@ -67,6 +68,7 @@ class _PartnerTabBarState extends State<PartnerTabBar> {
                     if (value?.isEmpty ?? true) {
                       return 'برجاء إدخال نسبة الملكية';
                     }
+                    return null;
                   },
                   controller: sharePercentageController,
                   decoration: const InputDecoration(

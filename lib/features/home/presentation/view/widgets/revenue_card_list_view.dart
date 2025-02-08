@@ -50,6 +50,7 @@ class _RevenueCardListViewState extends State<RevenueCardListView> {
                     if (value?.isEmpty ?? true) {
                       return 'برجاء إدخال المبلغ';
                     }
+                    return null;
                   },
                   controller: amountController,
                   decoration: const InputDecoration(
