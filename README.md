@@ -1,6 +1,6 @@
 # 💊 Pharmacy Accounting App – Flutter + Firebase
 
-A complete accounting and financial tracking solution tailored for **pharmacy businesses**, developed using **Flutter** with **Cubit** for state management. The app uses **Hive** for local storage and **Firebase** as an online backup solution.
+A complete accounting and financial tracking solution tailored for **pharmacy businesses**, developed using **Flutter** with **Cubit** for state management. The app uses **Firebase** as an online backup solution.
 
 ---
 
